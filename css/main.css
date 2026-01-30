@@ -1,0 +1,77 @@
+.site-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   gap: 250px;
+}
+.site-nav a {
+    text-decoration: none;
+    color: darkred;
+    font-family: "Anton", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.shade{
+    color: rgba(139, 0, 0, 0.5);
+}
+
+h1{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color:darkred
+
+}
+.cart{
+    width: 10%;
+}
+.model{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-1{
+    width: 100%;
+
+}
+
+.image-1{
+    width: 30%;
+}
+
+.image-2{
+    width: 30%;
+}
+
+.image-3{
+    width: 30%;
+}
+
+.image-4{
+    width: 30%;
+}
+
+.image-5{
+    width: 30%;
+}
+
+.image-6{
+    width: 30%;
+}
+.image-7{
+    width: 30%;
+}
+.image-8{
+    width: 30%;
+}
+.image-9{
+    width: 30%;
+}
+.image-10{
+    width: 30%;
+}
+
