@@ -1,75 +1,136 @@
-
+body{
+    margin: 0;
+    padding: 0;
+    
+}
 .cart{
     width: 25px;
     height: 25px;
-    float: right;
-    margin-top: -1px;
+    margin-left: auto;
+    margin-top: 5px;
 }
-/* spacing between headers */
+
+/* MY LINKS */
 .site-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-       background-color:rgba(181, 94, 94, 0.523); 
-    padding: 1px 30px;
-    border-radius: 8px;
-
+    border: darkred 2px solid;
+  
 }
 
-/* MY LINKS */
 .site-nav a {
     text-decoration: none;
-    color: darkred;
+    color: rgba(242, 176, 176, 0.838);
     font-family: "Anton", sans-serif;
-    font-weight: 500;
     font-style: normal;
     font-size: 20px;
+    padding: 0px 10px ;
+}
 
+.site-nav a:hover {
+    color: rgba(242, 176, 176, 0.838);
+    font-size: 25px;
+    transition: all 0.3s ease;
+   
+}
+
+/* HEADERS */
+h1{
+    font-family: "ANTON", sans-serif;
+    color:rgba(242, 176, 176, 0.838);
+    font-size: 40px;
+    text-align: center;
 }
 
 .shade{
     color: rgba(139, 0, 0, 0.5);
-}
-
-/* MY SHADELAB HEADER AND PRODUCT HEADER */
-h1{
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    color:darkred;
+    font-size: 40px;
 }
 
 h2 {
-  font-family: "Antonio", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+    
+  font-family: "ANTON", sans-serif;
+    color:darkred;
+    font-size: 30px;
    
+}
+h3{
+    font-family: "ANTON", sans-serif;
+    color:rgba(242, 176, 176, 0.838);
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    background-color: darkred;
 }
 
 /* My main image of model */
 .model{
     width: 100%;
-    max-width: 1100px;
     display: block;
-    margin: 0 auto;
-  padding: 10px;
 
 }
 
-/* My Images on Products */
-main{
+/* My Images on Products.html */
+.products-page{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3,auto);
-    gap: 10px;
-  
+    gap: 20px;
     padding: 10px;
+    margin: 0 auto;
 }
 
-main img{
+.products-page img{
     width: 100%;
     height: auto;
-    object-fit: cover;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    
+}
+
+.products-page img:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+
+.tortoise{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        /* padding: 5px; */
+      
+   
+}
+.tortoise img{
+    width: 100%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+/* PHONE */
+@media (max-width: 600px) {
+    .products-page {
+        grid-template-columns: 1fr;
+       width: 80%;
+        margin: 0 auto;
+    }  
+    
+}
+
+@media screen and (min-width: 600px) {
+    .site-nav a {
+        font-size: 20px;
+    }
+
+
+}
+
+/* LAPTOP */
+@media screen and (min-width: 1300px) {
+    .site-nav a {
+        font-size: 30px;
+    }
+   .cart{
+    width: 40px;
+    height: 40px;
+   }
 }
