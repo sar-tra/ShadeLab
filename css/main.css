@@ -1,73 +1,71 @@
 body{
     margin: 0;
     padding: 0;
-    
+    font-family: "ANTON", sans-serif;
+    color:rgba(242, 176, 176, 0.838);
 }
 .cart{
     width: 25px;
     height: 25px;
-    margin-left: auto;
     margin-top: 5px;
 }
-
-/* MY LINKS */
-.site-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: darkred 2px solid;
-  
-}
-
-.site-nav a {
-    text-decoration: none;
-    color: rgba(242, 176, 176, 0.838);
-    font-family: "Anton", sans-serif;
-    font-style: normal;
-    font-size: 20px;
-    padding: 0px 10px ;
-}
-
-.site-nav a:hover {
-    color: rgba(242, 176, 176, 0.838);
-    font-size: 25px;
-    transition: all 0.3s ease;
-   
-}
-
 /* HEADERS */
 h1{
-    font-family: "ANTON", sans-serif;
-    color:rgba(242, 176, 176, 0.838);
     font-size: 40px;
     text-align: center;
+    margin: 10px;
 }
 
 .shade{
     color: rgba(139, 0, 0, 0.5);
     font-size: 40px;
+    margin:0;
 }
 
-h2 {
-    
-  font-family: "ANTON", sans-serif;
+h2 { 
     color:darkred;
     font-size: 30px;
-   
+    margin-bottom: 10px;
 }
 h3{
-    font-family: "ANTON", sans-serif;
-    color:rgba(242, 176, 176, 0.838);
+    
     font-size: 20px;
     text-align: center;
     margin: 0;
     background-color: darkred;
 }
 
+/* MY NAVS */
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   background-color: darkred;
+
+  
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: rgba(242, 176, 176, 0.838);  
+    font-style: normal;
+    font-size: 20px;
+    padding: 0px 10px ;
+      transition: all 0.3s ease;
+   
+}
+
+.site-nav a:hover {
+   color: white;
+}
+
+
+
 /* My main image of model */
 .model{
     width: 100%;
     display: block;
+   
 
 }
 
@@ -76,7 +74,7 @@ h3{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3,auto);
-    gap: 20px;
+    gap: 10px;
     padding: 10px;
     margin: 0 auto;
 }
@@ -91,37 +89,87 @@ h3{
 .products-page img:hover{
     transform: scale(1.05);
     transition: all 0.3s ease;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
 }
 
-.tortoise{
+/* PRODUCT */
+.Burgundy-Icon{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
-        /* padding: 5px; */
-      
+  
+    padding-top: 10px;
    
 }
-.tortoise img{
+.Burgundy-Icon img{
     width: 100%;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+border: darkred 2px solid;
+
 }
+
+/* PRODUCT 2  */
+.Zulu-Brown{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 5px;
+   
+}
+ .Zulu-Brown img{
+    display: block;
+    width: 100%;
+    border: darkred 2px solid;
+ }
+
+ .h2-row h2{
+    margin: 0;
+}
+ .button{
+    color: rgba(242, 176, 176, 0.838);
+    font-size: 20px;
+    margin-left: auto;
+    background-color: darkred;
+    border-radius: 10px;
+    padding: 5px 10px;
+     
+     
+ }
+ .Size{
+    color:rgba(242, 176, 176, 0.838);
+    font-size: 20px;
+    /* margin: [TOP] [RIGHT] [BOTTOM] [LEFT] */
+    margin: 30px 0 0 5px; 
+    background-color: darkred;
+    border-radius: 10px;
+    padding: 5px 10px;
+ }
+
+.h2-row{
+    display: flex;
+    align-items: center;
+    grid-column: 1 / -1;
+    padding-left: 5px;
+    padding-right: 5px;
+
+} 
+
+ .price{
+    color:rgba(242, 176, 176, 0.838);
+    font-size: 20px;
+    margin: 0;
+    padding-left: 5px;
+}
+
 /* PHONE */
 @media (max-width: 600px) {
     .products-page {
         grid-template-columns: 1fr;
-       width: 80%;
+        width: 80%;
         margin: 0 auto;
     }  
-    
 }
 
 @media screen and (min-width: 600px) {
     .site-nav a {
         font-size: 20px;
     }
-
-
 }
 
 /* LAPTOP */
