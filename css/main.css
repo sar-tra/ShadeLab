@@ -2,16 +2,19 @@ body{
     margin: 0;
     padding: 0;
     font-family: "ANTON", sans-serif;
-    color:rgba(242, 176, 176, 0.838);
+    color:rgba(206, 168, 188, 0.838);
 }
 .cart{
     width: 25px;
     height: 25px;
     margin-top: 5px;
 }
+.cart:hover{
+   color: white;
+}
 /* HEADERS */
 h1{
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
     margin: 10px;
 }
@@ -47,7 +50,7 @@ h3{
 
 .site-nav a {
     text-decoration: none;
-    color: rgba(242, 176, 176, 0.838);  
+    color:rgba(206, 168, 188, 0.838);  
     font-style: normal;
     font-size: 20px;
     padding: 0px 10px ;
@@ -60,13 +63,11 @@ h3{
 }
 
 
-
 /* My main image of model */
 .model{
     width: 100%;
     display: block;
    
-
 }
 
 /* My Images on Products.html */
@@ -91,28 +92,26 @@ h3{
     transition: all 0.3s ease;
 }
 
-/* PRODUCT */
+/* PRODUCT & PRODUCT 2 */
 .Burgundy-Icon{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  
-    padding-top: 10px;
    
 }
+
 .Burgundy-Icon img{
     width: 100%;
 border: darkred 2px solid;
-
 }
 
-/* PRODUCT 2  */
 .Zulu-Brown{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 5px;
+    
    
 }
- .Zulu-Brown img{
+
+.Zulu-Brown img{
     display: block;
     width: 100%;
     border: darkred 2px solid;
@@ -122,23 +121,58 @@ border: darkred 2px solid;
     margin: 0;
 }
  .button{
-    color: rgba(242, 176, 176, 0.838);
+    color: rgba(206, 168, 188, 0.838);
     font-size: 20px;
     margin-left: auto;
     background-color: darkred;
     border-radius: 10px;
-    padding: 5px 10px;
-     
-     
+    padding: 5px 30px;  
+
  }
+.Choose{
+    color:darkred;
+    font-size: 15px;
+    margin: 15px 0px 0px 0px;
+
+    padding-left: 5px;
+}
  .Size{
-    color:rgba(242, 176, 176, 0.838);
+    color:rgba(206, 168, 188, 0.838);
     font-size: 20px;
     /* margin: [TOP] [RIGHT] [BOTTOM] [LEFT] */
-    margin: 30px 0 0 5px; 
+    margin: 0 0 30px 5px; 
     background-color: darkred;
     border-radius: 10px;
-    padding: 5px 10px;
+    padding: 5px 30px;
+
+ }
+ .circle-zulu{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(48, 8, 8);
+    margin: 0 0 50px 5px;
+    border: 2px solid rgba(206, 168, 188, 0.838);
+ }
+ .Color-zulu{
+    color: darkred;
+        font-size: 15px;
+        margin: 0;
+        padding-left: 5px;
+ }
+ .circle-burgundy{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(114, 8, 8);
+    margin: 0 0 50px 5px;
+    border: 2px solid rgba(206, 168, 188, 0.838);
+ }
+ .Color-burgundy{
+    color: darkred;
+        font-size: 15px;
+        margin: 0;
+        padding-left: 5px;
  }
 
 .h2-row{
@@ -149,13 +183,26 @@ border: darkred 2px solid;
     padding-right: 5px;
 
 } 
-
  .price{
-    color:rgba(242, 176, 176, 0.838);
+    color:rgba(206, 168, 188, 0.838);
     font-size: 20px;
     margin: 0;
     padding-left: 5px;
 }
+.rating{
+    color:darkred;
+    font-size: 15px;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.review p{
+padding-left: 5px;
+font-size: 20px;
+margin-bottom: 0px;
+margin-top: 0px;
+
+}   
 
 /* PHONE */
 @media (max-width: 600px) {
