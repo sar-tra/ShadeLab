@@ -12,6 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Anton&display=swap" 
     rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
+         <script src="js/main.js" defer></script>
 
 </head>
 
@@ -23,16 +24,18 @@
         <nav class="site-nav">
             <a href="index.html">Home</a>
             <a href="products.html">Products</a>
-            <a href="cart.html"><img class="cart" src="img/cart-icon.png" alt="cart"></a> 
+            <a href="cart.html"><img class="cart" src="img/cart-icon.png" alt="cart">
+            (<span id="cart-count">0)</span></a> 
         </nav>
     </header>
+
     <main class="Burgundy-Icon">
     <a href="#"><img class="image-2" src="img/image.2.jpg" alt="images" /></a>
     <a href="#"><img class="image-11" src="img/image.11.jpg" alt="images" /></a>
     
   <div class="h2-row">
     <h2>Burgundy Icon</h2>
-    <button class="button">Add to Cart</button>
+    <button class="add-cart" id="add">Add to Cart</button>
     </div>
 
    <div class="price-size">
@@ -40,11 +43,12 @@
      <p class="Choose"> Size: ONE SIZE </p>
      <button class="Size">ONE SIZE</button>
      <p class="Color-burgundy"> Color: Burgundy </p>
+
      <div class="circle-burgundy"> </div>    
      
      <div class="review">
         <p class="rating">Rating: 3/5</p>
-         <p>★★★☆☆</p>
+         <p class="star">★★★☆☆</p>
         </div>
      </div>
      

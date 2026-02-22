@@ -12,6 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Anton&display=swap" 
     rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
+         <script src="js/cart.js" defer></script>
 
 </head>
 
@@ -24,12 +25,23 @@
             <a href="index.html">Home</a>
             <a href="products.html">Products</a>
             <a href="cart.html"><img class="cart" src="img/cart-icon.png" alt="cart"></a>
-       
         </nav>
-      Your cart is empty! 
+
+      
     </header>
     <main>
-   
+    <p class="cart-title">YOUR CART</p>
+    
+    <div id="cart-container"></div>
+    <!-- TOTAL -->
+    <p class="total-price">
+     Total: $<span id="cart-total">0.00</span>
+    </p>
+    <!-- EMPTY CART -->
+    <p class="empty-cart">YOUR CART IS EMPTY!</p>
+
+
+
     </main>
 
 </body>
