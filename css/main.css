@@ -69,12 +69,16 @@ h3{
     margin-top: 20px;
 }
 .empty-cart{
-    color:rgba(206, 168, 188, 0.838);
-    font-size: 20px;
+    color:dar
+    font-size: 30px;
     text-align: center;
     margin-top: 10px;
 }
-
+#cart-count{
+    color: rgba(206, 168, 188, 0.838);
+    border-radius: 50%;
+     font-size: 12px;
+}
 
 /* My main image of model */
 .model{
@@ -165,6 +169,28 @@ border: darkred 2px solid;
     color: darkred;
     cursor: pointer;
  }
+ .alert{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: darkred 2px solid;
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+    z-index: 1000;
+ }
+ .alert button{
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+
 
 .Choose{
     color:darkred;

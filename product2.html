@@ -13,6 +13,7 @@
     rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
          <script src="js/main.js" defer></script>
+        
 
 </head>
 
@@ -24,7 +25,8 @@
         
             <a href="index.html">Home</a>
             <a href="products.html">Products</a>
-            <a href="cart.html"><img class="cart" src="img/cart-icon.png" alt="cart"> </a>
+            <a href="cart.html"><img class="cart" src="img/cart-icon.png" alt="cart">
+                 <span id="cart-count">0</span> </a>
             
             
         </nav>
@@ -36,7 +38,11 @@
 
     <div class="h2-row">
     <h2>Zulu Brown</h2>
-    <button class="add-cart" id="add">Add to Cart</button>
+    <button class="add-cart" 
+    data-name="Zulu Brown"
+    data-price="50.00"
+    data-image="img/image.3.jpg" 
+    >Add to Cart</button>
     </div>
 
     
