@@ -3,7 +3,7 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
 const cartContainer = document.getElementById("cart-container");
 const totalPriceElement = document.getElementById("cart-total");
 const emptyCartMessage = document.querySelector(".empty-cart");
-
+const cartCount = document.getElementById("cart-count");
 
 //UPPDATE ICON NUMBER
 function updateCartTotal() {

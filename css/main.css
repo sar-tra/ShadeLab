@@ -7,7 +7,7 @@ body{
 
 /* HEADERS */
 h1{
-    font-size: 20px;
+    font-size: 10px;
     text-align: center;
     margin: 10px;
 }
@@ -20,12 +20,12 @@ h1{
 
 h2 { 
     color:darkred;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 h3{
     
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     margin: 0;
     background-color: darkred;
@@ -45,18 +45,23 @@ h3{
     text-decoration: none;
     color:rgba(206, 168, 188, 0.838);  
     font-style: normal;
-    font-size: 20px;
+    font-size: 15px;
     padding: 0px 10px ;
       transition: all 0.3s ease;
    
 }
+
 .site-nav a:hover {
    color: white;
 }
+
 /* CART-HTML */
+.cart-count{
+     font-size: 10px;
+}
 .cart{
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     margin-top: 5px;
 }
 .cart:hover{
@@ -69,15 +74,10 @@ h3{
     margin-top: 20px;
 }
 .empty-cart{
-    color:dar
+    color:darkred;
     font-size: 30px;
     text-align: center;
     margin-top: 10px;
-}
-#cart-count{
-    color: rgba(206, 168, 188, 0.838);
-    border-radius: 50%;
-     font-size: 12px;
 }
 
 /* My main image of model */
@@ -90,8 +90,8 @@ h3{
 /* My Images on Products.html */
 .products-page{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3,auto);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1,auto);
     gap: 10px;
     padding: 10px;
     margin: 0 auto;
@@ -111,24 +111,27 @@ h3{
 
 /* PRODUCT & PRODUCT 2 */
 .Burgundy-Icon{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: block;
    
+}
+.burgundy-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
 }
 
 .Burgundy-Icon img{
-    width: 100%;
+width: 100%;
 border: darkred 2px solid;
 }
 
 .Zulu-Brown{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);  
+    display: block;
+    padding: 5px;
    
 }
 
 .Zulu-Brown img{
-    display: block;
     width: 100%;
     border: darkred 2px solid;
  }
@@ -136,6 +139,7 @@ border: darkred 2px solid;
  .h2-row h2{
     margin: 0;
 } 
+
 .h2-row{
     display: flex;
     align-items: center;
@@ -145,23 +149,23 @@ border: darkred 2px solid;
 
 } 
  .price{
-    color:rgba(206, 168, 188, 0.838);
-    font-size: 20px;
-    margin: 0 0 0 5px;
+    color:darkred;
+    font-size: 15px;
+    margin: 0;
     padding-left: 5px;
 }
 
  .add-cart{
-    width: 200px;
+    width: 120px;
     text-align: center;
-    color: rgba(206, 168, 188, 0.838);
-    font-size: 20px;
+    color:darkred;
+    font-size: 15px;
     margin-left: auto;
-    margin-top: 10px;
+    margin-top: 5px;
     background-color:white;
     border-radius: 10px;
-    border: darkred 2px solid;
-    padding: 5px 30px;  
+    border: rgba(206, 168, 188, 0.838) solid;
+    padding: 5px 5px;  
 
  }
  .add-cart:hover{
@@ -200,23 +204,24 @@ border: darkred 2px solid;
 }
 
  .Size{
-    width: 150px;
+    width: 140px;
     text-align: center;
-    color:rgba(206, 168, 188, 0.838);
-    font-size: 20px;
+    color: darkred;
+    font-size: 15px;
     /* margin: [TOP] [RIGHT] [BOTTOM] [LEFT] */
     margin: 0px 0px 5px 5px; 
     background-color:white;
     border-radius: 10px;
-    border: darkred 2px solid;
+    border: rgba(206, 168, 188, 0.838) 2px solid;
     padding: 5px 30px;
 
  }
+
  .Size:hover{
     background-color: rgba(206, 168, 188, 0.838);
     color: darkred;
-    cursor: pointer;
  }
+
  /* COLORSWATCH */
  .circle-zulu{
     width: 50px;
@@ -261,41 +266,95 @@ border: darkred 2px solid;
 }
 
 .review p{
-padding-left: 5px;
-font-size: 20px;
+
+font-size: 15px;
 margin-bottom: 0px;
 margin-top: 0px;
 
 }   
 .star{
-    color: rgba(206, 168, 188, 0.838);
+    color: darkred;
     font-size: 20px;
     margin: 0 0px 5px 5px;
     padding-left: 5px;
 }
-
-/* PHONE */
-@media (max-width: 600px) {
-    .products-page {
-        grid-template-columns: 1fr;
-        width: 80%;
-        margin: 0 auto;
-    }  
+.recently-viewed{
+    color:darkred;
+    font-size: 15px;
+    margin: 70px 0px 0px 5px;
+   
 }
 
-@media screen and (min-width: 600px) {
-    .site-nav a {
-        font-size: 20px;
-    }
+.recently-img{
+   display:grid;
+   grid-template-columns: repeat(4, 1fr);
+  
+}
+.recently-img img{
+    width: 100%;
+    border: darkred 2px solid;
 }
 
-/* LAPTOP */
-@media screen and (min-width: 1300px) {
-    .site-nav a {
-        font-size: 30px;
-    }
-   .cart{
+
+@media (min-width: 1025px) {
+h3{
+    font-size: 45px;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 60px;
+}
+.site-nav a {
+    font-size: 40px;
+}
+.shade{
+    font-size: 60px;
+}
+.cart{
     width: 40px;
     height: 40px;
-   }
+}
+
+.cart-count{
+     font-size: 20px;
+}
+.price-size p{
+    font-size: 40px;
+}
+.review{
+    margin-top: 255px;
+}
+  
+ .add-cart{
+    width: 200px;
+    font-size: 25px;
+}
+.Size{
+    width: 200px;
+    font-size: 25px;
+}          
+  .products-page{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+}
+.Burgundy-Icon, .Zulu-Brown{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 100%;
+    align-items: start;
+    gap:10px;
+    
+}
+.burgundy-info, .zulu-info{
+    margin-top: 0px;
+
+}
+.burgundy-img, .zulu-img{
+    display:block;   
+}
+
+
 }
