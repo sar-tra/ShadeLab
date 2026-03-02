@@ -164,7 +164,7 @@ border: darkred 2px solid;
     margin-top: 5px;
     background-color:white;
     border-radius: 10px;
-    border: rgba(206, 168, 188, 0.838) solid;
+    border: rgba(206, 168, 188, 0.838) 3px solid;
     padding: 5px 5px;  
 
  }
@@ -212,7 +212,7 @@ border: darkred 2px solid;
     margin: 0px 0px 5px 5px; 
     background-color:white;
     border-radius: 10px;
-    border: rgba(206, 168, 188, 0.838) 2px solid;
+    border: rgba(206, 168, 188, 0.838) 3px solid;
     padding: 5px 30px;
 
  }

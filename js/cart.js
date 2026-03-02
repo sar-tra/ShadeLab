@@ -42,7 +42,7 @@ function displayCart() {
 
 
         itemDiv.innerHTML = `
-            <img src="${item.image}" width="80">
+            <img src="${item.image}" width="150">
             <p>${item.name} - $${item.price}</p>
             <button onclick="decreaseItem(${index})">-</button>
             <span> ${item.quantity} </span>
