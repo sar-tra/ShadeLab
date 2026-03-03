@@ -2,30 +2,30 @@ body{
     margin: 0;
     padding: 0;
     font-family: "ANTON", sans-serif;
-    color:rgba(206, 168, 188, 0.838);
+    color: darkred;
 }
 
 /* HEADERS */
 h1{
-    font-size: 10px;
+    font-size: 1.5rem;
     text-align: center;
-    margin: 10px;
+    margin: 0.6 rem;
 }
 
 .shade{
-    color: rgba(139, 0, 0, 0.5);
-    font-size: 40px;
+    color: rgba(206, 168, 188, 0.838);
+    font-size: 2.5rem;
     margin:0;
 }
 
 h2 { 
     color:darkred;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
 }
 h3{
-    
-    font-size: 15px;
+    color:rgba(206, 168, 188, 0.838);
+    font-size: 0.9rem;
     text-align: center;
     margin: 0;
     background-color: darkred;
@@ -36,18 +36,16 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   background-color: darkred;
-
-  
+    background-color: darkred;
 }
 
 .site-nav a {
     text-decoration: none;
     color:rgba(206, 168, 188, 0.838);  
     font-style: normal;
-    font-size: 15px;
-    padding: 0px 10px ;
-      transition: all 0.3s ease;
+    font-size: 0.9rem;
+    padding: 0 0.6rem ;
+    transition: all 0.3s ease;
    
 }
 
@@ -57,50 +55,60 @@ h3{
 
 /* CART-HTML */
 .cart-count{
-     font-size: 10px;
+     font-size: 0.6rem;
 }
 .cart{
-    width: 15px;
-    height: 15px;
-    margin-top: 5px;
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-top: 0.3rem;
 }
 .cart:hover{
    color: white;
 }
-.cart-title{
+.cart-title, .empty-cart{
     color:darkred;
-    font-size: 30px;
+    font-size: 1.8rem;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.2rem;
 }
-.empty-cart{
-    color:darkred;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 10px;
+
+.cart-item{
+    display: flex;
+    margin-bottom: 1.8rem;
+    padding-left: 0.6rem;
 }
+.cart-image{
+    width: 9rem;
+    margin-right: 0.3rem;
+    border: darkred 0.1rem solid;
+    border-radius: 0.6rem;
+}
+.cart-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 
 /* My main image of model */
 .model{
     width: 100%;
     display: block;
-   
 }
 
 /* My Images on Products.html */
 .products-page{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1,auto);
-    gap: 10px;
-    padding: 10px;
+    grid-template-columns:1fr;
+    gap: 0.6rem;
+    padding: 0.6rem;
     margin: 0 auto;
 }
 
 .products-page img{
     width: 100%;
     height: auto;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0,0,0,0.3);
     
 }
 
@@ -110,31 +118,20 @@ h3{
 }
 
 /* PRODUCT & PRODUCT 2 */
-.Burgundy-Icon{
+.burgundy-icon, .zulu-brown{
     display: block;
    
 }
-.burgundy-img{
+.burgundy-img, .zulu-img{
     display: grid;
     grid-template-columns: 1fr 1fr;
     
 }
 
-.Burgundy-Icon img{
+.burgundy-icon img, .zulu-brown img{
 width: 100%;
-border: darkred 2px solid;
+border: darkred 0.1rem solid;
 }
-
-.Zulu-Brown{
-    display: block;
-    padding: 5px;
-   
-}
-
-.Zulu-Brown img{
-    width: 100%;
-    border: darkred 2px solid;
- }
 
  .h2-row h2{
     margin: 0;
@@ -144,31 +141,37 @@ border: darkred 2px solid;
     display: flex;
     align-items: center;
     grid-column: 1 / -1;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
 
 } 
- .price{
+.price{
     color:darkred;
-    font-size: 15px;
+    font-size: 0.9rem;
     margin: 0;
-    padding-left: 5px;
+    padding-left: 0.3rem;
+}
+.total-price{
+    color:darkred;
+    font-size: 1.5rem;
+    margin: 0;
+    padding-left: 0.9rem;
 }
 
- .add-cart{
-    width: 120px;
+ .add-cart, .size{
+    width: 7.5rem;
     text-align: center;
     color:darkred;
-    font-size: 15px;
+    font-size: 0.9rem;
     margin-left: auto;
-    margin-top: 5px;
+    margin-top: 0.3rem;
     background-color:white;
-    border-radius: 10px;
-    border: rgba(206, 168, 188, 0.838) 3px solid;
-    padding: 5px 5px;  
+    border-radius: 0.6rem;
+    border: rgba(206, 168, 188, 0.838) 0.1rem solid;
+    padding: 0.3rem;  
 
  }
- .add-cart:hover{
+ .add-cart:hover, .size:hover{
     background-color: rgba(206, 168, 188, 0.838);
     color: darkred;
     cursor: pointer;
@@ -179,109 +182,83 @@ border: darkred 2px solid;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    border: darkred 2px solid;
-    border-radius: 10px;
-    padding: 20px;
+    border: darkred 0.1rem solid;
+    border-radius: 0.6rem;
+    padding: 1.2rem;
     display: none;
     z-index: 1000;
  }
  .alert button{
-    margin-top: 10px;
-    padding: 5px 10px;
+    margin-top: 0.6rem;
+    padding: 0.3rem 0.6rem;
     background-color: darkred;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     cursor: pointer;
  }
 
 
-.Choose{
+.choose{
     color:darkred;
-    font-size: 15px;
-    margin: 20px 0px 0px 5px;
-    padding-left: 5px;
+    font-size: 0.9rem;
+    margin: 1.2rem 0 0 0.3rem;
+    padding-left: 0.3rem;
 }
 
- .Size{
-    width: 140px;
-    text-align: center;
-    color: darkred;
-    font-size: 15px;
-    /* margin: [TOP] [RIGHT] [BOTTOM] [LEFT] */
-    margin: 0px 0px 5px 5px; 
-    background-color:white;
-    border-radius: 10px;
-    border: rgba(206, 168, 188, 0.838) 3px solid;
-    padding: 5px 30px;
-
- }
-
- .Size:hover{
-    background-color: rgba(206, 168, 188, 0.838);
-    color: darkred;
- }
-
  /* COLORSWATCH */
- .circle-zulu{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgb(48, 8, 8);
-    margin: 0 0 50px 5px;
-    border: 2px solid rgba(206, 168, 188, 0.838);
- }
- .Color-zulu{
-    color: darkred;
-        font-size: 15px;
-        margin: 30px 0px 5px 0px;
-        padding-left: 5px;
- }
- .circle-burgundy{
-    width: 50px;
-    height: 50px;
+ 
+ .circle-burgundy, .circle-zulu{
+    width: 3.1rem;
+    height: 3.1rem;
     border-radius: 50%;
     background-color: rgb(114, 8, 8);
-    margin: 0 0 50px 5px;
-    border: 2px solid rgba(206, 168, 188, 0.838);
+    margin: 0 0 3.1rem 0.3rem;
+    border: 0.1rem solid rgba(206, 168, 188, 0.838);
  }
- .Color-burgundy{
-    color: darkred;
-        font-size: 15px;
-        margin: 30px 0px 5px 5px;
-        padding-left: 5px;
- }
+  .circle-zulu{
 
+    width: 3.1rem;
+    height: 3.1rem;
+    border-radius: 50%;
+    background-color: rgb(60, 32, 20);
+    margin: 0 0 3.1rem 0.3rem;
+    border: 0.1rem solid rgba(206, 168, 188, 0.838);
+ }
+ .color-burgundy, .color-zulu{
+    color: darkred;
+        font-size: 0.9rem;
+        margin: 1.8rem 0 0.3rem 0.3rem;
+        padding-left: 0.3rem;
+ }
 
 .rating{
     color:darkred;
-    font-size: 15px;
-    margin: 0 0px 5px 5px;
-    padding-left: 5px;
+    font-size: 0.9rem;
+    margin: 0 0 0.3rem 0.3rem;
+    padding-left: 0.3rem;
 }
 .review{
-    border: darkred 2px solid;
-    border-radius: 10px;
-    margin: 10px 5px 2px 5px;
+    border: darkred 0.1rem solid;
+    border-radius: 0.6rem;
+    margin: 0.6rem 0.3rem 0.1rem 0.3rem;
 }
 
 .review p{
+font-size: 0.9rem;
+margin:0;
+} 
 
-font-size: 15px;
-margin-bottom: 0px;
-margin-top: 0px;
-
-}   
 .star{
     color: darkred;
-    font-size: 20px;
-    margin: 0 0px 5px 5px;
-    padding-left: 5px;
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0.3rem;
+    padding-left: 0.3rem;
 }
 .recently-viewed{
     color:darkred;
-    font-size: 15px;
-    margin: 70px 0px 0px 5px;
+    font-size: 0.9rem;
+    margin: 4.3rem 0 0 0.3rem;
    
 }
 
@@ -292,68 +269,58 @@ margin-top: 0px;
 }
 .recently-img img{
     width: 100%;
-    border: darkred 2px solid;
+    border: darkred 0.1rem solid;
 }
 
 
 @media (min-width: 1025px) {
 h3{
-    font-size: 45px;
+    font-size: 2.5rem;
 }
-h1{
-    font-size: 40px;
+h1, .site-nav a, .price-size p, .cart-item, .total-price{
+    font-size: 2.5rem;
 }
-h2{
-    font-size: 60px;
+h2, .shade{
+    font-size: 3.7rem;
 }
-.site-nav a {
-    font-size: 40px;
-}
-.shade{
-    font-size: 60px;
-}
+
 .cart{
     width: 40px;
     height: 40px;
 }
 
 .cart-count{
-     font-size: 20px;
+     font-size: 1.2rem;
 }
-.price-size p{
-    font-size: 40px;
-}
+
 .review{
-    margin-top: 255px;
+    margin-top: 16rem;
+}
+.cart-image{
+    width: 270px;
 }
   
- .add-cart{
+.add-cart, .size{
     width: 200px;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
-.Size{
-    width: 200px;
-    font-size: 25px;
-}          
-  .products-page{
+         
+.products-page{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
    
 }
-.Burgundy-Icon, .Zulu-Brown{
+.burgundy-icon, .zulu-brown{
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr; 
     width: 100%;
     align-items: start;
-    gap:10px;
+    gap: 0.6rem;
     
 }
 .burgundy-info, .zulu-info{
-    margin-top: 0px;
+    margin-top: 0;
 
-}
-.burgundy-img, .zulu-img{
-    display:block;   
 }
 
 

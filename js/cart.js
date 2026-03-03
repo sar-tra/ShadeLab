@@ -37,17 +37,20 @@ function displayCart() {
         total += item.price * item.quantity;
 
         const itemDiv = document.createElement("div");
-        itemDiv.style.marginBottom = "30px"; 
-        itemDiv.style.paddingLeft = "10px";
-
+        itemDiv.classList.add("cart-item");
 
         itemDiv.innerHTML = `
-            <img src="${item.image}" width="150">
+            <img  class="cart-image" src="${item.image}">
+            <div class="cart-details">
             <p>${item.name} - $${item.price}</p>
+          <div class="cart-actions">
             <button onclick="decreaseItem(${index})">-</button>
             <span> ${item.quantity} </span>
             <button onclick="increaseItem(${index})">+</button>
-            <button onclick="removeItem(${index})">Remove</button>
+        
+              </div>
+                  <button class="remove-btn" onclick="removeItem(${index})">Remove</button>
+              </div>
         `;
         cartContainer.appendChild(itemDiv);
     });
@@ -83,4 +86,4 @@ function removeItem(index){
 
 }
 displayCart();
-uppdateCartTotal();
+updateCartTotal();
