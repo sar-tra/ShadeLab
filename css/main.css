@@ -180,11 +180,13 @@ border: darkred 0.1rem solid;
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
     background-color: white;
     border: darkred 0.1rem solid;
     border-radius: 0.6rem;
     padding: 1.2rem;
+    width: 60%;
+    max-width: 25rem;
     display: none;
     z-index: 1000;
  }
@@ -312,16 +314,19 @@ h2, .shade{
 }
 .burgundy-icon, .zulu-brown{
     display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 80%;
+}
+.burgundy-img, .zulu-img{
+    display: grid;
     grid-template-columns: 1fr; 
-    width: 100%;
-    align-items: start;
-    gap: 0.6rem;
-    
+    width: 100%; 
 }
 .burgundy-info, .zulu-info{
-    margin-top: 0;
+  margin-left: 0.5rem;
 
 }
-
-
+.recently-img{
+  width: 150%;
+}
 }

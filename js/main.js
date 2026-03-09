@@ -16,6 +16,15 @@ function updateCartTotal() {
 
     cartTotal.textContent = totalQuantity;
 }
+function showAlert() {
+    const alertBox = document.getElementById('alert');
+
+    alertBox.style.display = 'block';
+
+    setTimeout(() => {
+        alertBox.style.display = 'none';
+    }, 2000);
+}   
 
 addButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -36,8 +45,8 @@ addButtons.forEach(button => {
        
         localStorage.setItem('cart', JSON.stringify(cart));
 
-        alert(product.name + " " + "added to cart!");
         updateCartTotal();
+        showAlert();
     });
 });
 
