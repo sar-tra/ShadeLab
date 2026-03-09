@@ -38,14 +38,14 @@ function displayCart() {
 
         const itemDiv = document.createElement("div");
         itemDiv.classList.add("cart-item");
-
+   
         itemDiv.innerHTML = `
             <img  class="cart-image" src="${item.image}">
             <div class="cart-details">
-            <p>${item.name} - $${item.price}</p>
-          <div class="cart-actions">
+            <p class="cart-item-name">${item.name} - $${item.price}</p>
+            <div class="cart-actions">
             <button onclick="decreaseItem(${index})">-</button>
-            <span> ${item.quantity} </span>
+            <span class="quantity">${item.quantity}</span>
             <button onclick="increaseItem(${index})">+</button>
         
               </div>
