@@ -35,7 +35,7 @@ function displayCart() {
 
     cart.forEach((item, index) => {
         total += item.price * item.quantity;
-
+        // ---- HELP FROM CHAT.GPT WITH itemDiv.innerHTML ---
         const itemDiv = document.createElement("div");
         itemDiv.classList.add("cart-item");
    

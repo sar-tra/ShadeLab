@@ -134,7 +134,6 @@ h3{
 }
 
 
-
 /* ------- PRODUCTS PAGE ------ */
 .products-page{
     display: grid;
@@ -221,6 +220,7 @@ border: darkred 0.1rem solid;
     color: darkred;
     cursor: pointer;
  }
+ /* HELP FROM CHAT.GPT WITH ALERT MESSAGE */
  .alert{
     position: fixed;
     top: 50%;
@@ -308,24 +308,23 @@ h2, .shade{
 
 }
 .remove-btn{
-    width: 7.5rem;
+    width: 9rem;
     font-size: 1.6rem;
-    margin-left: 2.5rem;
+    margin-left: 2rem;
     border: rgba(206, 168, 188, 0.838) 0.2rem solid;
+    border-radius: 1.6rem;
 }
-
 .review{
     margin-top: 16rem;
 }
 .cart-image{
     width: 270px;
 }
-  
+ 
 .add-cart, .size{
     width: 200px;
     font-size: 1.5rem;
-}
-         
+}         
 .products-page{
     display: grid;
     grid-template-columns: repeat(3, 1fr);

@@ -16,6 +16,7 @@ function updateCartTotal() {
 
     cartTotal.textContent = totalQuantity;
 }
+// ---- HELP FROM CHAT.GPT WITH ALERT ---
 function showAlert() {
     const alertBox = document.getElementById('alert');
 
