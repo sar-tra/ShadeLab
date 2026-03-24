@@ -19,11 +19,12 @@ function updateCartTotal() {
 
     cartTotal.textContent = totalQuantity;
 }
-// display cart items
+// ---- DISPLAY CART ITEMS ----
 function displayCart() {
     cartContainer.innerHTML = "";
     let total = 0;
 
+    // --- EMPTY CART MESSAGE ---
     if (cart.length === 0) {
         emptyCartMessage.style.display = "block";
         totalPriceElement.textContent = "0.00";
@@ -35,6 +36,7 @@ function displayCart() {
 
     cart.forEach((item, index) => {
         total += item.price * item.quantity;
+        
         // ---- HELP FROM CHAT.GPT WITH itemDiv.innerHTML ---
         const itemDiv = document.createElement("div");
         itemDiv.classList.add("cart-item");
@@ -42,14 +44,15 @@ function displayCart() {
         itemDiv.innerHTML = `
             <img  class="cart-image" src="${item.image}">
             <div class="cart-details">
-            <p class="cart-item-name">${item.name} - $${item.price}</p>
-            <div class="cart-actions">
-            <button onclick="decreaseItem(${index})">-</button>
-            <span class="quantity">${item.quantity}</span>
-            <button onclick="increaseItem(${index})">+</button>
-        
-              </div>
-                  <button class="remove-btn" onclick="removeItem(${index})">Remove</button>
+                <p class="cart-item-name">${item.name} - $${item.price}</p>
+                <div class="cart-actions">
+                    <button onclick="decreaseItem(${index})">-</button>
+                    <span class="quantity">${item.quantity}</span>
+                    <button onclick="increaseItem(${index})">+</button>
+                </div>
+                <button class="remove-btn" onclick="removeItem(${index})">
+                    Remove
+                </button>
               </div>
         `;
         cartContainer.appendChild(itemDiv);
@@ -73,6 +76,7 @@ function decreaseItem(index) {
     } else {
         cart.splice(index, 1);
     }
+    
     localStorage.setItem("cart", JSON.stringify(cart));
     displayCart();
 

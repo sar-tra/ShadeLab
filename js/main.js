@@ -16,6 +16,7 @@ function updateCartTotal() {
 
     cartTotal.textContent = totalQuantity;
 }
+
 // ---- HELP FROM CHAT.GPT WITH ALERT ---
 function showAlert() {
     const alertBox = document.getElementById('alert');
@@ -35,8 +36,10 @@ addButtons.forEach(button => {
             price: parseFloat(button.dataset.price),
             image: button.dataset.image
         }
+
         //Check if item already exists in cart
         const existingItem = cart.find(item => item.name === product.name);
+        
         if (existingItem) {
             existingItem.quantity +=1;
         } else {
